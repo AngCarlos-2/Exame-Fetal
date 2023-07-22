@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/Icons8-Windows-8-Time-Date.48.png" type="image/x-icon">
+    <title>Chá Revelação</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <header>
+    <h1>Exame de Sexagem Fetal
+    </header>
+    
+    <h3>Filiação:</h3> <p>Filiação 1 <input type='text' size="30px" id="txtF1" pattern="[^0-9]+"> Filiação 2 <input type="text" size="30px" id="txtF2" pattern="[^0-9]+"> </p>
+    
+    <h3>Bebê:</h3> Sexo
+        <select id="selsex">
+            <option selected></option>
+            <option value="M"> Masculino </option>
+            <option value="F"> Feminino </option>
+        </select>
+    <div class="bRes">
+    <input type="button" value="Verificar Resultado" onclick="result()">
+    <input class="bConfirm" type="button" value="Confirmar Resultado" onclick="confirm()" style="display: none;">
+    </div>
+    <div class='resultado' id="res">
+    </div>
+    <footer><p>&copy; ByÂngelo</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
